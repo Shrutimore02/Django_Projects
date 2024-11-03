@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Movie App</title>
+	<link rel="stylesheet" type="text/css" href="{% static "moviesapp/css/homepage.css" %}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="container" align="center">
+		<div class="jumbotron">
+        <h1 class="display-4">Welcome to Movie Project </h1>
+ 		
+ 		
+  		<a class="btn btn-primary btn-lg" href="/movie/add/" role="button"> Add Movies</a>&nbsp&nbsp&nbsp
+  		<a class="btn btn-primary btn-lg" href="/movie/list/" role="button">List Of Movies</a>&nbsp&nbsp&nbsp
+  		
+
+		</div>
+	</div>
+</body>
+</html>

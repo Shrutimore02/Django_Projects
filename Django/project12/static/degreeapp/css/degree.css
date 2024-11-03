@@ -1,0 +1,24 @@
+h1{
+	font-style: italic;
+	font-size: 70px;
+	color: purple;
+}
+#i1{
+	margin-left: 80%;
+	width: 300px;
+	height: 350px;
+}
+#i2{
+	width: 500px;
+	height: 300px;
+	margin-left: 60%;
+}
+
+.container{
+	display: inline-flex;
+}
+button{
+	 height: 100px;
+	 width: 300px;
+	 margin-left: 10%;
+}

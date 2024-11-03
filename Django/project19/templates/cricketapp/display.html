@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "cricketapp/css/display.css" %}">
+	<title>Indian Players</title>
+</head>
+<body>
+	<h1>Players Data</h1>
+	{% if cricketer_data %}
+	    <table border="10">
+		<tr>
+			<b><th>NAME</th>
+			<th>AGE</th>
+			<th>ROLE</th>
+			<th>CITY</th>
+			<th>DOB</th></b>
+			    {% for data in cricketer_data  %}
+			    <tr>
+			    	<td>{{ data.name }}</td>
+			    	<td>{{ data.age }}</td>
+			    	<td>{{ data.role }}</td>
+			    	<td>{{ data.city }}</td>
+			    	<td>{{ data.dob }}</td>
+			    </tr>
+			    	
+			    {% endfor %}
+	{% else %}
+			<h2>No Data to Display!</h2>
+
+		</tr>
+		
+	</table>
+
+		
+	{% endif %}
+</body>
+</html>

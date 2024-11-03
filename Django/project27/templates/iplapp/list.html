@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "iplapp/css/list.css" %}">
+	<title>List IPL Team's </title>
+</head>
+<body>
+	<h1><center> List of IPL Team's and Player's</center></h1>
+	<h2>Team Chennai Super Kings Player's Data</h2>
+	{% if csk_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in csk_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+	<br><br>
+	
+
+	<h2>Team Delhi Capitals Player's Data</h2>
+	{% if dc_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in dc_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+	<br><br>
+
+
+	<h2>Team Gujarat Titans Player's Data</h2>
+	{% if gt_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in gt_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+	<br><br>
+
+
+
+	<h2>Team Kolkata Knight Riders Player's Data</h2>
+	{% if kkr_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in kkr_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+	<br><br>
+
+
+	<h2>Team Lucknow Super Giants Player's Data</h2>
+	{% if lsg_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in lsg_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+<br><br>
+
+
+	<h2>Team Mumbai Indians Player's Data</h2>
+	{% if mi_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in mi_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+	<br><br>
+
+
+	<h2>Team Punjab Kings Player's Data</h2>
+	{% if pk_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in pk_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+<br><br>
+
+
+	<h2>Team Royal Challengers Bengaluru Player's Data</h2>
+	{% if rcb_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in rcb_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+	<br><br>
+
+
+	<h2>Team Rajasthan Royals Player's Data</h2>
+	{% if rr_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in rr_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+<br><br>
+
+
+	<h2>Team Sunrisers Hyderabad Player's Data</h2>
+	{% if srh_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+				<th>MARITAL STATUS</th>
+				<th>ROLE</th>
+				{% for data in srh_data  %}
+					<tr>
+						<td>{{ data.name }}</td>
+						<td>{{ data.age }}</td>
+						<td>{{ data.country }}</td>
+						<td>{{ data.marital_status }}</td>
+						<td>{{ data.role }}</td>
+					</tr>
+				
+				{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+		<h2>No Data to Display</h2>
+	{% endif %}
+	<br><br>
+
+</body>
+</html>

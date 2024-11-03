@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "moviesapp/css/list.css" %}">
+	<title>Movies List</title>
+</head>
+<body>
+	<h1><b>List Of Movies</b></h1>
+	{% if movies %}
+		<table border="10">
+			<tr>
+				<th>ID</th>
+				<th>NAME OF THE MOVIE</th>
+				<th>HERO</th>
+				<th>HEROINE</th>
+					{% for data in movies  %}
+						<tr>
+							<td>{{ data.id }}</td>
+							<td>{{ data.movie_name }}</td>
+							<td>{{ data.hero  }}</td>
+							<td>{{ data.heroine }}</td>
+						</tr>
+					{% endfor %}
+			</tr>
+	</table>
+	{% else %}
+		<h2>No data To Display</h2>
+		
+	{% endif %}
+
+</body>
+</html>

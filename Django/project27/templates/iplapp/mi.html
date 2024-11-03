@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "iplapp/css/mi.css" %}">
+	<title>MI Details</title>
+</head>
+<body>
+	<h1>Enter the Details of MI Team</h1>
+	<form method="POST">
+		{{ mi_form.as_p }}
+		{% csrf_token %}
+		<input type="submit" name="Add another Player">
+		<a class="btn btn-primary btn-lg" href="/ipl/display/" role="button">Back</a>
+	</form>
+
+</body>
+</html>

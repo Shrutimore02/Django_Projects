@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "moviesapp/css/add.css" %}">
+	<title>Add Movies</title>
+</head>
+<body>
+	<h1>Add Movie Details</h1>
+	<form method="POST">
+		{{ movie_form.as_p }}
+		{% csrf_token %}
+		<input type="submit" name="Add Another Movie">
+		<a  class="button"  href="/movie/homepage/"> Back</a>	
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+#passport1{
+	margin-left: 80%;
+	margin-top: 10px;
+	width: 300px;
+	height: 300px;
+}
+#passport2{
+	margin-left: 80%;
+	margin-top: 10px;
+	width: 300px;
+	height: 300px;
+}
+#passport3{
+	margin-left: 80%;
+	margin-top: 10px;
+	width: 300px;
+	height: 300px;
+}
+#passport4{
+	margin-left: 80%;
+	margin-top: 10px;
+	width: 300px;
+	height: 300px;
+}
+img{
+	width: 600px;
+	height: 800px;
+}
+.jumbotron{
+	
+
+	text-align: center;
+
+}
+a{
+	margin: 20px auto;
+	justify-content: space-around;
+}

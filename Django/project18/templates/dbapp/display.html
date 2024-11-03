@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "dbapp/css/display.css" %}">
+	<title>Student Details</title>
+</head>
+<body>
+	<h2>Student Details</h2>
+	{% if student_data %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>DOB</th>
+				<th>MAIL_ID</th>
+				<th>PHONE_NUMBER</th>
+				<th>BRANCH</th>
+					{% for data in student_data  %}
+						<tr>
+							<td>{{ data.name }}</td>
+							<td>{{ data.dob }}</td>
+							<td>{{data.mail_id }}</td>
+							<td>{{ data.phone_number }}</td>
+							<td>{{ data.branch }}</td>
+						</tr>
+						
+					{% endfor %}
+			</tr>
+		</table>
+	{% else %}
+			<h3>No Data to Display</h3>
+		
+	{% endif %}
+
+
+</body>
+</html>

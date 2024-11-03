@@ -1,0 +1,13 @@
+marquee{
+	background: black;
+	color: white;
+}
+.jumbotron{
+	background-color: gray;
+	height: 300px;
+	width: 500px;
+	margin-top: 50px;
+}
+a{
+	margin-top: 110px;
+}

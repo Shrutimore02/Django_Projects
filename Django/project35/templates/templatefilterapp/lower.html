@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOWER CASE</title>
+</head>
+<body>
+	{% for d in data  %}
+		<ul>
+			<li>Name:{{ d.name|lower }}</li>
+			<li>Age:{{ d.age }}</li>
+			<li>Department:{{ d.department|lower }}</li>
+			<li>Date:{{ d.date|timesince }}</li>
+		</ul><br><br><hr>
+		
+	{% endfor %}
+
+</body>
+</html>

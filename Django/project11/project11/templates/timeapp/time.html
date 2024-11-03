@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome User</title>
+</head>
+<body>
+	<h1 id="one">Good {{ msg }} Students,</h1>
+	<h1 id="two">Welcome to Django Class</h1>
+	<h1 id="three">The Current Server Time is:{{ server_time }}</h1>
+	<img src="{% static "timeapp/css/time.css" %}">
+
+
+</body>
+</html>
